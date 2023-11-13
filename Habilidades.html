@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>KILLJOY</title>
+
+    <style>
+            body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(245, 255, 189), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+  
+        .container{
+            display: flex;
+            justify-content: center; 
+            margin: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #d5e29b;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #f4ff92;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            background-color: #FFF;
+        }
+
+        td {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+            background-color: rgb(162, 162, 162);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+
+        .video1 {
+            display: flex;
+            justify-content: center;
+            margin-inline: 50px;
+        }
+
+        .habilidades{
+            display: flex;
+            justify-content:center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>KILLJOY</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Biografia</a></li>
+                <li><a class="active" href="Habilidades.html">Habilidades</a></li>
+                <li><a href="Setup.html">Setup</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <H2 style="margin: 15PX;">
+        Habilidades de killjoy
+    </H2>
+
+    <hr>
+
+    <div class="habilidades">
+        <div class="container">
+        <table>
+            <colgroup>
+                <col style="background-color: rgb(207, 207, 207);">
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <th></th>
+            <th>
+                Torreta
+            </th>
+            <th>
+                Alarma bot
+            </th>
+            <th>
+                Granada de enjambre
+            </th>
+            <th>
+                Bloqueo
+            </th>
+
+            <tr>
+                <td>Tecla</td>
+                <td>E</td>
+                <td>Q</td>
+                <td>C</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>Funcion</td>
+                <td>
+                    EQUIPA una torreta. DISPARA para desplegar una torreta que dispara a los enemigos en un cono de 180
+                    grados. MANTÉN PULSADO EQUIPAR para recoger la torreta desplegada.
+                </td>
+                <td>
+                    EQUIPA un bot de alarma camuflado. DISPARA para desplegar un bot que dará caza a los enemigos que
+                    estén dentro del alcance. Tras alcanzar su objetivo, el bot explota y aplica vulnerabilidad. MANTÉN
+                    PULSADO EQUIPAR para recoger un bot desplegado.
+                </td>
+                <td>
+                    EQUIPA una granada de nanoenjambre. DISPARA para lanzar la granada. Cuando aterriza, la granada
+                    enjambre se camufla. ACTIVA el nanoenjambre para desplegar un enjambre de nanobots.
+                </td>
+                <td>
+                    EQUIPA el dispositivo de bloqueo. DISPARA para desplegar el dispositivo. Tras un largo periodo de
+                    carga, el dispositivo detiene a todos los enemigos que estén dentro del radio de efecto. Los
+                    enemigos pueden destruir el dispositivo.
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+    </div>
+
+    
+
+
+    <video class="video1" src="assets/videos/killjoy sentada en torreta.mp4" controls muted>killjoy con su torreta activa</video>
+
+         
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2023 </p>
+    </footer>
+</body>
+
+</html>

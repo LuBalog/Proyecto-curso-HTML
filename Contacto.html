@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>KILLJOY</title>
+
+    <style>
+       body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(245, 255, 189), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+  
+        .container{
+            display: flex;
+            justify-content: center;
+            margin: 15px;
+        }
+
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .linav {
+            float: left;
+        }
+
+        .linav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .linav a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #d5e29b;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #f4ff92;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #d5e29b;
+            border-radius: 4px;
+            box-sizing: border-box;
+            color: black;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #d5e29b;
+            color: #333;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #d5e29b;
+            color: #333;
+        }
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>KILLJOY</h1>
+        <nav>
+            <ul class="nav">
+                <li class="linav"><a href="index.html">Biografia</a></li>
+                <li class="linav"><a href="Habilidades.html">Habilidades</a></li>
+                <li class="linav"><a href="Setup.html">Setup</a></li>
+                <li class="linav"><a class="active" href="contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor-formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Escriba aqui su nombre" required minlength="3">
+
+        <label for="Apellido"></label>
+        <input type="text" id="Apellido" name="Apellido" placeholder="Escriba aqui su Apellido" required minlength="3">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email" placeholder="Escriba aqui su email" required minlength="3">
+
+        <label for="Pais">Pais: </label>
+        <select name="pais" id="pais">
+            <option value="Argentina">Argentina</option>
+            <option value="Chile">Chile</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Espana">Espana</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Venezuela">Venezuela</option>
+            <option value="Paraguay">Paraguay</option>
+            <option value="Ecuador">Ecuador</option>
+        </select>
+        
+        <label for="Comentarios"></label>
+        <textarea name="Comentario" id="Imentario" placeholder="Escriba aqui su comentario"></textarea>
+
+        <label for="Motivo de contacto"></label>
+        <input type="radio" id="Motivo" name="Motivo"><i>Soy main killjoy, la amo</i>
+        <input type="radio" id="Motivo" name="Motivo"><i>quiero aprender mas sobre sus setups</i>
+        <input type="radio" id="Motivo" name="Motivo"><i>quiero conocer sobre mas agentes</i>
+        <input type="radio" id="Motivo" name="Motivo"><i>informacion sobre valorant</i>
+        <input type="radio" id="Motivo" name="Motivo"><i>reclamos</i>
+
+        <input type="submit" value="Enviar">
+    </div>
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2023 </p>
+    </footer>
+</body>
+</html>
